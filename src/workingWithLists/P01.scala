@@ -7,10 +7,11 @@ object P01 extends App {
   println(list.reverse.head) // Why not.
   println(list.foldLeft(0)((_, current) => current))
   println(list.reduce((_, current) => current)) // More elegant. Also, n - 1 operations compared to foldLeft.
-  println(list.foreach(x => if (x == list.last) println(x))) // 😎
+  list.foreach(x => if (x == list.last) println(x)) // 😎
 
   // Find the end of the list recursively.
   def last[A](list: List[A]): A = { // O(n) time complexity.
+    if (list.isEmpty) throw new NoSuchElementException
     if (list.tail.isEmpty) list.head
     else last(list.tail)
   }

@@ -11,6 +11,7 @@ object P02 extends App {
   println(list.indexOf(list.length)) // Think about it.
   println(4)
 
+  // Find the second to last element recursively.
   def lastButOne[A](list: List[A]): A = {
     def aux(list: List[A], previous: A): A = {
       if (list.tail.isEmpty) previous
@@ -19,5 +20,5 @@ object P02 extends App {
     if (list.isEmpty) throw new NoSuchElementException
     aux(list, list.head)
   }
-  println(lastButOne(List()))
+  println(lastButOne(list))
 }

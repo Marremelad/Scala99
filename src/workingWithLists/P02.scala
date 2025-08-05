@@ -20,5 +20,6 @@ object P02 extends App {
     if (list.isEmpty) throw new NoSuchElementException
     aux(list, list.head)
   }
+
   println(lastButOne(list))
 }

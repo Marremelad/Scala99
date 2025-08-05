@@ -15,5 +15,6 @@ object P01 extends App {
     if (list.tail.isEmpty) list.head
     else last(list.tail)
   }
+
   println(last(List(1, 2, "Hello", 3, 'a')))
 }

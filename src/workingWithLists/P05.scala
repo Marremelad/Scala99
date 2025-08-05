@@ -16,6 +16,7 @@ object P05 extends App {
 
     aux(list)
   }
+
   println(reverse(List(1, 2, 3)))
   println(reverseTailRec(List(1, 2, 3)))
 }

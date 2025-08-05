@@ -1,7 +1,6 @@
 package workingWithLists
 // Find the Kth element in a list.
 object P03 extends App {
-
   // Find Kth element recursively.
   def nth[A](n: Int, list: List[A]): A =
     if (n <= 0) {

@@ -7,6 +7,7 @@ package workingWithLists
 //
 //  scala> encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
 //res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
+
 object P10 extends App {
   def encode[A](list: List[A]): List[(Int, A)] = {
     P09.pack(list).map(x => (x.length, x.head))

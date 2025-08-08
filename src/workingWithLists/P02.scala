@@ -1,4 +1,6 @@
 package workingWithLists
+
+import scala.annotation.tailrec
 // Find the last but one element of a list.
 
 //Example:
@@ -18,6 +20,7 @@ object P02 extends App {
 
   // Find the second to last element recursively.
   def lastButOne[A](list: List[A]): A = {
+    @tailrec
     def aux(list: List[A], previous: A): A = {
       if (list.tail.isEmpty) previous
       else aux(list.tail, list.head)

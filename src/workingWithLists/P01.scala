@@ -1,4 +1,6 @@
 package workingWithLists
+
+import scala.annotation.tailrec
 // Find the last element of a list.
 
 //Example:
@@ -15,6 +17,7 @@ object P01 extends App {
   list.foreach(x => if (x == list.last) println(x)) // 😎
 
   // Find the end of the list recursively.
+  @tailrec
   def last[A](list: List[A]): A = { // O(n) time complexity.
     if (list.isEmpty) throw new NoSuchElementException
     if (list.tail.isEmpty) list.head

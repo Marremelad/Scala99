@@ -14,7 +14,7 @@ object P09 extends App {
           else go(tail, head :: Nil, sublist :: result)
       }
     }
-    go(list, List(list.head), Nil)
+    go(list.tail, List(list.head), Nil)
   }
 
   println(pack(List('a', 'a', 'a', 'b', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')))

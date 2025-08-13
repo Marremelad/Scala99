@@ -21,5 +21,5 @@ object P17 extends App {
     else go(list, n, Nil)
   }
 
-  println(split(List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'), 3))
+  println(split(List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'), 5))
 }

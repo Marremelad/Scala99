@@ -7,8 +7,8 @@ import scala.annotation.tailrec
 //
 //Example:
 //
-//  scala> split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
-//res0: (List[Char], List[Char]) = (List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i,
+//  scala> split(3, List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'))
+//res0: (List[Char], List[Char]) = (List('a', 'b', 'c'),List('d', 'e', 'f', 'g', 'h', 'i', 'j', 'k')
 
 object P17 extends App {
   def split[A](list: List[A], n: Int): (List[A], List[A]) = {

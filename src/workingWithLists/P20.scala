@@ -1,7 +1,7 @@
 package workingWithLists
 
 import scala.annotation.tailrec
-// Remove the Kth element from a list
+// Remove the Kth element from a list.
 
 //Example:
 //
